@@ -125,3 +125,6 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	email = mike@captain-refactor.co.za
+	name = Captain Mike
