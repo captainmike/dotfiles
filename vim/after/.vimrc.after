@@ -1,0 +1,28 @@
+" Make NERDTree update current working directory
+let g:NERDTreeChDirMode = 2
+let g:ctrlp_by_filename = 0
+let g:NERDTreeWinPos = 'right'
+
+" Auto open NERDTree
+au VimEnter *  NERDTree
+
+" Double <Esc><Esc> to auto-save
+map <Esc><Esc> :w<CR>
+
+" Make quick global search with Ag
+map <leader>g* :Ag<CR>
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+" Remap , to ,; since , is now the leader key
+nmap <leader>; <Plug>SneakPrevious
+
+" Custom mapping to toggle NERDTree with ,N
+nmap <leader>N :NERDTreeToggle<CR>
+nmap <leader>\ :NERDTreeToggle<CR>
+
+" Change the default EasyMotion shading to something more readable with Solarized
+" http://stackoverflow.com/questions/6126871/easymotion-coloring-in-vim-with-solarized-theme
+hi link EasyMotionTarget ErrorMsg
+hi link EasyMotionShade  Comment
