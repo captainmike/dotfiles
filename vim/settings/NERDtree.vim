@@ -2,3 +2,7 @@
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
+
+" Split windows from NERDTree like VIM defaults
+let NERDTreeMapOpenSplit ='s'
+let NERDTreeMapOpenVSplit ='v'
