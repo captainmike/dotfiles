@@ -117,6 +117,8 @@ map <silent> ,gz <C-w>o
 " this to vv and ss
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
+nnoremap <silent> qq <C-w>q
+nnoremap <silent> oo <C-w>o
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
 imap <silent> <C-K> <%=   %><Esc>3hi
