@@ -1,7 +1,10 @@
 " Make NERDTree update current working directory
 let g:NERDTreeChDirMode = 2
-let g:ctrlp_by_filename = 0
 let g:NERDTreeWinPos = 'right'
+
+let g:ctrlp_by_filename = 0
+" This seems to be necessary for putting tags in .git/tags
+let g:ctrlp_working_path_mode = 'ra'
 
 " Auto open NERDTree
 au VimEnter *  NERDTree
