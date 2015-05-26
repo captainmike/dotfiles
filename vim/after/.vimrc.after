@@ -7,7 +7,7 @@ let g:ctrlp_by_filename = 0
 let g:ctrlp_working_path_mode = 'ra'
 
 " Auto open NERDTree
-au VimEnter *  NERDTree
+" au VimEnter *  NERDTree
 
 " Search ctags
 map <leader>jt :CtrlPTag<CR>
