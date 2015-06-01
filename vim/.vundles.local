@@ -1,1 +1,3 @@
 Bundle "https://github.com/mattn/emmet-vim"
+Bundle "vimux"
+Plugin 'turbux.vim'
