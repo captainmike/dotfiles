@@ -19,7 +19,8 @@ map <Esc><Esc> :w<CR>
 map <leader>g* :Ag<CR>
 
 " Preserve indentation while pasting text from the OS X clipboard
-noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+" noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+set pastetoggle=<F2>
 
 " Remap , to ,; since , is now the leader key
 nmap <leader>; <Plug>SneakPrevious
@@ -32,6 +33,7 @@ nmap <leader>\ :NERDTreeToggle<CR>
 " http://stackoverflow.com/questions/6126871/easymotion-coloring-in-vim-with-solarized-theme
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
+
 
 " Zoom / Restore window.
 " http://stackoverflow.com/questions/13194428/is-better-way-to-zoom-windows-in-vim-than-zoomwin
