@@ -12,8 +12,10 @@ let g:ctrlp_working_path_mode = 'ra'
 " au VimEnter *  NERDTree
 
 
-" Search ctags
-map <leader>jt :CtrlPTag<CR>
+" CtrlP shortcut to search tags, recent files and buffer
+nnoremap <silent> <leader>jt :CtrlPTag<CR>
+nnoremap <silent> <leader>jr :CtrlPMRUFiles<CR>
+nnoremap <silent> <leader>jb :CtrlPBuffer<cr>
 
 
 " Double <Esc><Esc> to auto-save
