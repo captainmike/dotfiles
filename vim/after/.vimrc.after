@@ -1,16 +1,27 @@
+" Double <Esc><Esc> to auto-save
+map <Esc><Esc> :w<CR>
+
+
+" Preserve indentation while pasting text from the OS X clipboard
+" noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+set pastetoggle=<F2>
+
+
 " Make NERDTree update current working directory
 let g:NERDTreeChDirMode = 2
 let g:NERDTreeWinPos = 'right'
+
+" Custom mapping to toggle NERDTree with ,N
+nmap <leader>N :NERDTreeToggle<CR>
+nmap <leader>\ :NERDTreeToggle<CR>
+
+" Auto open NERDTree
+" au VimEnter *  NERDTree
 
 
 let g:ctrlp_by_filename = 0
 " This seems to be necessary for putting tags in .git/tags
 let g:ctrlp_working_path_mode = 'ra'
-
-
-" Auto open NERDTree
-" au VimEnter *  NERDTree
-
 
 " CtrlP shortcut to search tags, recent files and buffer
 nnoremap <silent> <leader>jt :CtrlPTag<CR>
@@ -18,26 +29,13 @@ nnoremap <silent> <leader>jr :CtrlPMRUFiles<CR>
 nnoremap <silent> <leader>jb :CtrlPBuffer<cr>
 
 
-" Double <Esc><Esc> to auto-save
-map <Esc><Esc> :w<CR>
-
-
 " Make quick global search with Ag
 map <leader>g* :Ag<CR>
 vnoremap <leader>g* y:Ag "<C-R>""<CR>
 
-" Preserve indentation while pasting text from the OS X clipboard
-" noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
-set pastetoggle=<F2>
-
 
 " Remap , to ,; since , is now the leader key
 nmap <leader>; <Plug>SneakPrevious
-
-
-" Custom mapping to toggle NERDTree with ,N
-nmap <leader>N :NERDTreeToggle<CR>
-nmap <leader>\ :NERDTreeToggle<CR>
 
 
 " Change the default EasyMotion shading to something more readable with Solarized
