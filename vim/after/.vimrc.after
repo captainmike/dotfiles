@@ -14,7 +14,7 @@ let g:NERDTreeWinPos = 'right'
 let g:NERDTreeQuitOnOpen = 1
 
 " Custom mapping to toggle NERDTree with ,N
-nmap <leader>N :NERDTreeToggle<CR>
+nmap <leader>l :NERDTreeToggle<CR>
 
 " Auto open NERDTree
 " au VimEnter *  NERDTree
