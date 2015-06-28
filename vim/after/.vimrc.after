@@ -10,6 +10,7 @@ set pastetoggle=<F2>
 " Make NERDTree update current working directory
 let g:NERDTreeChDirMode = 2
 let g:NERDTreeWinPos = 'right'
+let g:NERDTreeQuitOnOpen = 1
 
 " Custom mapping to toggle NERDTree with ,N
 nmap <leader>N :NERDTreeToggle<CR>
