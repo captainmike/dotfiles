@@ -1,6 +1,5 @@
 " Double <Esc><Esc> to auto-save
 map <Esc><Esc> :w<CR>
-map <C>[[ :w<CR>
 
 
 " Preserve indentation while pasting text from the OS X clipboard
