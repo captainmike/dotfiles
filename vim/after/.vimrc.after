@@ -30,8 +30,8 @@ nnoremap <silent> <leader>jb :CtrlPBuffer<cr>
 
 
 " Make quick global search with Ag
-map <leader>g* :Ag<CR>
-vnoremap <leader>g* y:Ag "<C-R>""<CR>
+map <leader>g* :Ag!<CR>
+vnoremap <leader>g* y:Ag! "<C-R>""<CR>
 
 
 " Remap , to ,; since , is now the leader key
